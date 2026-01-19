@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        
+        .event{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:xx-large;
+            font-style:italic;
+        }
+        .btn1{
+            color: white;
+        }
+        .btn1:hover{
+            background-color: white;
+            color:red;
+            border-radius: 5px;
+        }
+        .home{
+           padding: 0%;
+           height: 200%; 
+        }
+        
+        #about{
+            text-align: center;
+            padding: 50px ; 
+            color:white; 
+        }
+        .abou1 , .gallery , .service , .contact{
+            font-weight:100px;
+            font-size: xx-large;
+            color: red;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+       
+         /* Styling for the Grid-based Gallery */
+        .gallery-item {
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 2px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            
+        }
+        /* hover text hidden by default */
+        .demo{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-size: xx-large;
+        }
+        .gallery-item:hover .demo{
+            opacity: 1;
+        }
+
+
+        marquee{
+            color: red;
+        }
+    
+        .s1:hover{
+            border-radius: 15px;
+            color: rgb(249, 18, 18);
+            transform: scale(1.1);     
+        }
+        
+      .icon{
+        margin-top: 55px;
+        margin-left:50px;
+        margin-right: 50px;
+        margin-bottom: 5px;
+      }
+       .icon1:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.20);
+      }
+     
+       .icons{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        white-space:nowrap;
+        gap:50px;
+        padding-top:10px;
+       }
+   
+      
+       
+    
+    </style>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+        <div class="container" id="home" >
+            <a class="navbar-brand event" href="#"><img class="img" src="vistara.jpeg" alt="logo" width="100" height="50"> Vistara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link btn1 ms-lg-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link btn1 ms-lg-3" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link btn1 ms-lg-3 " href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link btn1 ms-lg-3" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn1 ms-lg-3" href="booking.html" target="_blank">Booking</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-xl-12 home">
+                    <img src="VISTARA (1).png" alt="home" width="100%" >
+                     <!-- <video src="VISTARA.mp4" loop autoplay width="100%"></video> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="div-padding">
+            <div class="container-fluid" style="background-color: white; color: black;border-radius: 10px;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <h2 class="about1 mb-4" style="color: red;">About</h2>
+                        <p class="ab">We are <span style="color: red;">Vistara Event Management</span>, a team dedicated to transforming your vision into a spectacular reality.<br> Established with a passion for perfection, we handle everything from intimate gatherings to grand corporate celebrations.</p>
+                        <p class="ab">Our philosophy is built on clear communication, meticulous planning, and a creative approach, <br>ensuring every detail reflects the high standards of the Vistara brand.<br> We specialize in turning complexity into simple elegance.</p>
+                    </div>
+                    <div class="col-xs-12  col-sm-6 col-md-6">
+                        <img src="wed1.jpeg" alt="" class="img1" style="border-radius: 15px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <marquee behavior="scroll" direction="left">Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management Vistara-Event Management</marquee>
+        <div id="gallery" class="div-padding">
+            <div class="container-fluid">
+                <h3 class="gallery mb-5">Our Gallery</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="gallery-item">
+                            <img src="corp.jpg" alt="Corporate Event Setup">
+                            <div class="demo">Coorporate Events</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 ">
+                        <div class="gallery-item ">
+                            <img src="wed2.jpeg" alt="Wedding Decoration">
+                            <div class="demo">Wedding Decorations</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="gallery-item">
+                            <img src="corporate1.jpg" alt="Product Launch Stage">
+                            <div class="demo">Product Launch Stage</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="gallery-item">
+                            <img src="birth1.jpg" alt="Birthday Party Setup">
+                            <div class="demo">Birthday Party</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="gallery-item">
+                            <img src="beach.jpg" alt="Beach Wedding">
+                            <div class="demo">Beach Wedding</div>
+                        </div>
+                    </div>
+                     <div class="col-12 col-sm-6 col-md-4">
+                        <div class="gallery-item">
+                            <img src="out1.jpg" alt="OutDoor Events">
+                            <div class="demo">OutDoor Events</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container-fluid">
+                <h3 class="service mb-5">Our Services</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                    <div class="col">
+                        <div class="s1 p-4">
+                            <h4 class="text">Wedding Planning</h4>
+                            <p>We organize complete wedding events with beautiful décor, perfect coordination, and seamless management from start to finish.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="s1 p-4 ">
+                            <h4 class="text">Coorporate Events</h4>
+                            <p>We plan professional corporate events such as conferences, product launches, and award functions with high-quality execution.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="s1 p-4 ">
+                            <h4 class="text">Birthday parties</h4>
+                            <p>We create fun, themed birthday celebrations with décor, games, entertainment, and memorable experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="s1 p-4 ">
+                            <h4 class="text">Catering</h4>
+                            <p>We offer high-quality catering with a wide range of menu options and professional service arrangements.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="s1 p-4 ">
+                            <h4 class="text">Stage & Decor</h4>
+                            <p>We design and set up stages, backdrops, and décor elements that match your event theme and style.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="s1 p-4 ">
+                            <h4 class="text">Photography & Videography</h4>
+                            <p>We capture your special moments through professional photography, videography, and drone coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="mb-5">
+            <div class="container-fluid">
+                <h3 class="contact">Contact Us</h3>
+                <div class="row justify-content-center">
+                    <div class="col-xl-5">
+                        <div class="p-5 border border-3 border-danger rounded shadow">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label text-red">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-red">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label text-red">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="How can Vistara help with your event?" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-danger btn-lg">Send Inquiry</button>
+                                </div>
+                            </form>
+                            <div class="icons">
+                                <img class="icon1" src="fb.png" alt="" width="50px" height="50px">
+                                <img class="icon1" src="insta2.png" alt="" width="50px" height="50px">
+                                <img class="icon1" src="wp2.png" alt="" width="50px" height="50px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <footer class="text-center py-4 mt-auto bg-danger" style="height: 5px;" >
+        <p class="m-0" style="color: white;">&copy; 2025 Vistara Event Management. All Rights Reserved. | <a href="#home" class="text-white">Back to Top</a></p>
+    </footer>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+</body>
+</html>
